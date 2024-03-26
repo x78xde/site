@@ -1,0 +1,171 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+
+  /* Estilos para el formulario de inicio de sesión */
+
+#login {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+  }
+  
+  #login .container {
+    text-align: center;
+  }
+  
+  #login h2 {
+    margin-bottom: 20px;
+  }
+  
+  #login .form-group {
+    margin-bottom: 20px;
+  }
+  
+  #login input[type="email"],
+  #login input[type="password"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  
+  #login button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #login button:hover {
+    background-color: #555;
+  }
+  
+  /* Estilos para el footer */
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Estilos para el formulario de creación de cuenta */
+
+#signup .form-group input[type="email"],
+#signup .form-group input[type="password"] {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+#signup button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#signup button:hover {
+  background-color: #555;
+}
+
+  
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 50px 0;
+  }
+  
+  #banner {
+    background: #f2f2f2;
+    text-align: center;
+  }
+  
+  #banner h2 {
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  #games {
+    background: #fff;
+  }
+  
+  .game {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .game img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px; /* Ajusta el valor según sea necesario */
+  }
+  
+  /* Media query para dispositivos más pequeños */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  }
+  

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - Activision</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html">
+        <img src="imagenes/icono/LOGO DE FONDO TRANSPARENTE.png" style="max-width: 200px; height: auto;">
+      </a>
+      <nav>
+        <ul>
+          
+          <li><a href="juegos.html">Juegos</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="login.html" class="login-btn">Iniciar Sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="login">
+    <div class="container">
+      <h2>Iniciar Sesión</h2>
+      <form action="login_process.php" method="POST">
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+        </div>
+        <div class="form-group">
+          <input type="password" id="password" name="password" placeholder="Contraseña" required>
+        </div>
+        <button type="submit" class="btn">Iniciar Sesión</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="signup">
+    <div class="container">
+      <p>¿No tienes una cuenta de Activision? <span><a href="signup.html">Únete</a></span></p>
+    </div>
+  </section>
+
+  
+</body>
+</html>
