@@ -1,51 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SCRIPTEXE</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="imagenes/icono/logo de Scriptexe.ico">
-  
-</head>
-<body>
-  <header>
-    <div class="container">
-      <a href="index.html">
-        <img src="imagenes/icono/LOGO DE FONDO TRANSPARENTE.png" style="max-width: 200px; height: auto;">
-      </a>
-      <nav>
-        <ul>
-          <li><a href="informacion/juegos.html">Juegos</a></li>
-          <li><a href="informacion/acerca.html">Acerca de</a></li>
-          <li><a href="informacion/noticias.html">Noticias</a></li>
-          <li><a href="login.html" class="login-btn">Iniciar Sesión</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scriptexe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="home">
+      <div class="bubble medium"></div>
+      <div class="bubble small right bottom"></div>
 
-  <section id="banner">
-    <div class="container">
-      <h2>Bienvenido a ScriptExe</h2>
-      <p>Explora nuestros emocionantes juegos y descubre mundos llenos de aventuras.</p>
-      <a href="#" class="btn">Explorar juegos</a>
-    </div>
-  </section>
+      <header class="header">
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="servicios.html">Juegos</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+        <nav class="menu">
+          <ul>
+            <li><a href="#" id="login-button" class="download">Iniciar sesión</a></li>
+          </ul>
+        </nav>
+      </header>
+      <article class="slider">
+        <h2>
+          Bienvenidos a Scriptexe
+          <span class="subtitle">
+            <span>Imaginación</span>
+            <span>Tecnología</span>
+            <span>Diversión</span>
+          </span>
+        </h2>
+        <p>Imagina un mundo lleno de exploraciones y diversión ilimitada.</p>
+        <p>Consulta nuestros servicios y empieza ya.</p>
+        
+      </article>
 
-  <section id="games">
-    <div class="container">
-      <h2>Nuestros juegos populares</h2>
-      <div class="game">
-        <img src="imagenes/icono/icono(2).png" alt="Country ops">
-        <h3>Country ops</h3>
-        <p>Una serie de videojuegos de disparos en primera persona.</p>
-      </div>
-    </div>
-  </section>
+      
 
-  
+      <section class="pricing">
+        <h2>Juegos</h2>
 
-  
-</body>
+        <section class="game-container">
+          <div class="game-card">
+              <img src="imagenes/icono/icono(2).ico" alt="Logo del Juego" class="game-logo">
+              <div class="game-info">
+                  <h2>Project battlegrid</h2>
+                  <p>Multiplayer y battleroyale prueba la alfa del juego.</p>
+                  <button class="play-button">Juega Ahora</button>
+              </div>
+          </div>
+      </section>
+
+
+       
+
+      <footer class="footer">
+        <nav>
+          <ul class="menu-footer">
+            <h4>Links</h4>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <ul class="menu-footer">
+            <h4>Ayuda</h4>
+            <li><a href="mailto:scriptexecontact@gmail.com">scriptexecontact@gmail.com</a></li>
+            <li><a href="#">México</a></li>
+          </ul>
+          <ul class="menu-footer">
+            <h4>Redes Sociales</h4>
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">TikTok</a></li>
+          </ul>
+        </nav>
+        <p>©2024 Scriptexe.</p>
+      </footer>
+    </section>
+    <script>
+      document.getElementById('start-button').addEventListener('click', function () {
+        // Agregar clase para la animación de deslizamiento
+        document.body.classList.add('slide-up');
+        
+        // Esperar 1 segundo y luego redirigir al login
+        setTimeout(function () {
+          window.location.href = 'login.html';
+        }, 1000);
+      });
+
+      document.getElementById('login-button').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevenir la navegación inmediata
+
+        // Mostrar el formulario de inicio de sesión con animación de deslizamiento hacia abajo
+        document.getElementById('login-form-container').classList.toggle('hidden');
+        document.getElementById('login-form-container').classList.toggle('slide-down');
+      });
+    </script>
+  </body>
 </html>

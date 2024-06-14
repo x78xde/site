@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, rgba(29, 78, 216, 0.8), rgba(102, 126, 234, 0.8)), #000000;
+    background-blend-mode: overlay;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-box, .register-box {
+    background: rgba(17, 17, 17, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #aaa;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: -20px;
+    left: 0;
+    color: #1abc9c;
+    font-size: 12px;
+}
+
+.btn {
+    width: 100%;
+    background: #1abc9c;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #16a085;
+}
+
+.back-btn {
+    width: 100%;
+    background: #ff4c4c;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.back-btn:hover {
+    background: #e60000;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p a {
+    color: #1abc9c;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+p a:hover {
+    color: #16a085;
+}
+
+/* Estilos para el contenedor del formulario de inicio de sesión */
+#login-form-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+  
+  /* Clase para mostrar el formulario */
+  #login-form-container.slide-down {
+    display: block;
+    opacity: 1;
+    animation: slideDown 1s ease-out forwards;
+  }
+  
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Ocultar el contenedor cuando no se está mostrando */
+  .hidden {
+    display: none;
+  }
+  
+  /* Estilos adicionales para el formulario de inicio de sesión */
+  #login-form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #login-form-container label {
+    margin-bottom: 10px;
+  }
+  
+  #login-form-container input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #login-form-container button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #login-form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+
+/* Bubble effect */
+.bubble {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgb(34, 178, 195);
+    background: -moz-linear-gradient(
+        0deg,
+        rgba(34, 178, 195, 1) 0%,
+        rgba(114, 23, 217, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        0deg,
+        rgba(34, 178, 195, 1) 0%,
+        rgba(114, 23, 217, 1) 100%
+    );
+    background: linear-gradient(
+        0deg,
+        rgba(34, 178, 195, 1) 0%,
+        rgba(114, 23, 217, 1) 100%
+    );
+    z-index: -1;
+    filter: blur(80px);
+    -webkit-filter: blur(80px);
+    animation: bubble 10s infinite alternate;
+    -webkit-animation: bubble 10s infinite alternate;
+}
+
+@keyframes bubble {
+    from {
+        border-radius: 40% 50% 40% 30%;
+        -webkit-border-radius: 40% 50% 40% 30%;
+        -moz-border-radius: 40% 50% 40% 30%;
+        -ms-border-radius: 40% 50% 40% 30%;
+        -o-border-radius: 40% 50% 40% 30%;
+        transform: scale(0.5);
+    }
+    to {
+        border-radius: 30% 40% 50% 40%;
+        -webkit-border-radius: 30% 40% 50% 40%;
+        -moz-border-radius: 30% 40% 50% 40%;
+        -ms-border-radius: 30% 40% 50% 40%;
+        -o-border-radius: 30% 40% 50% 40%;
+        transform: scale(1);
+    }
+}

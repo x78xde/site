@@ -1,0 +1,53 @@
+
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.game-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px;
+}
+
+.game-logo {
+    width: 100%;
+    height: auto;
+}
+
+.game-info {
+    padding: 20px;
+}
+
+.game-info h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.game-info p {
+    font-size: 16px;
+    color: #666;
+}
+
+.play-button {
+    background: linear-gradient(90deg, rgba(34, 178, 195, 1) 0%, rgba(114, 23, 217, 1) 100%);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.play-button:hover {
+    background: linear-gradient(90deg, rgba(114, 23, 217, 1) 0%, rgba(34, 178, 195, 1) 100%);
+}
